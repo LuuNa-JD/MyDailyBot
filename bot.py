@@ -84,7 +84,7 @@ async def list_keywords(ctx):
 @bot.command(name='help')
 async def help_command(ctx):
     embed = discord.Embed(title="Commandes du Bot", description="Voici les commandes actives:", color=0x00ff00)
-    embed.add_field(name="!test", value="Affiche les articles du moment.", inline=False)
+    embed.add_field(name="!now", value="Affiche les articles du moment.", inline=False)
     embed.add_field(name="!clearall", value="Supprime l'ENSEMBLE des messages du channel.", inline=False)
     embed.add_field(name="!clear [amount]", value="Supprime un nombre défini de message dans le channel (default: 5).", inline=False)
     embed.add_field(name="!cleardb", value="Nettoie la base de données comprenant l'historique des articles scrapés.", inline=False)
